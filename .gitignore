@@ -1,3 +1,4 @@
 # vs code extensions
 .DS_Store
 *.code-workspace
+.vscode
