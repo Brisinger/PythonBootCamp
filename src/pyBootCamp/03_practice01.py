@@ -1,0 +1,17 @@
+fruits = []
+fruit = input("Enter the name of the 1st fruit: ")
+fruits.append(fruit)
+fruit = input("Enter the name of the 2nd fruit: ")
+fruits.append(fruit)
+fruit = input("Enter the name of the 3rd fruit: ")
+fruits.append(fruit)
+fruit = input("Enter the name of the 4th fruit: ")
+fruits.append(fruit)
+fruit = input("Enter the name of the 5th fruit: ")
+fruits.append(fruit)
+fruit = input("Enter the name of the 6th fruit: ")
+fruits.append(fruit)
+fruit = input("Enter the name of the 7th fruit: ")
+fruits.append(fruit)
+
+print("\nList of all my fruits:", fruits)
