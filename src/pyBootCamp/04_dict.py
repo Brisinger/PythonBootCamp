@@ -14,3 +14,7 @@ print(oxford)
 print(type(oxford))
 # Fetch the dictionary key value.
 print("\nThe value of 'linq' key in dictionary", oxford, "is:", oxford["linq"])
+
+for item in oxford:
+    print(type(item))
+    print(oxford[item])

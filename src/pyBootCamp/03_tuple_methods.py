@@ -1,6 +1,3 @@
-from re import M
-
-
 myTupleOfIntegers = (1, 7, 2, 1, 1, 1)
 # Count number of times a given element occur in tuple.
 print("Count number of times a given element occur in tuple")

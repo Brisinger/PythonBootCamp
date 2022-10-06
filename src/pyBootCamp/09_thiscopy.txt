@@ -1,0 +1,3 @@
+Python file management is very simple.
+Python opens a file using open() function.
+If an object has context manager defined it can be used in with statement. When it exists it closes the file automatically.
