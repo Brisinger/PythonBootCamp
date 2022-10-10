@@ -36,12 +36,12 @@ class Vector:
 
     def __mul__(self, obj):
         dim = self.dimension
-        n = []
+        n = 0
         if (isinstance(obj, Vector)):
             for i in range(dim):
-                n.append(self.val[i] * obj.val[i])
+                n += self.val[i] * obj.val[i]
             else:
-                return Vector(n)
+                return n
         else:
             raise TypeError(f"object must be of type {self.__class__.__qualname__} for dot product operation")
 

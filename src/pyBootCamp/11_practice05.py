@@ -28,12 +28,12 @@ class Vector:
 
     def __mul__(self, obj):
         dim = self.dimension
-        n = []
+        prod = 0
         if (isinstance(obj, Vector)):
             for i in range(dim):
-                n.append(self.val[i] * obj.val[i])
+                prod += self.val[i] * obj.val[i]
             else:
-                return Vector(n)
+                return prod
         else:
             raise TypeError(f"object must be of type {self.__class__.__qualname__} for dot product operation")
 
@@ -47,4 +47,4 @@ print(f"Adding vectors {a.val} and {b.val} is {sum.val}")
 
 # Dot product of Vector objects
 prod = a * b
-print(f"Dot product of vectors {a.val} and {b.val} is {prod.val}")
+print(f"Dot product of vectors {a.val} and {b.val} is {prod}")
