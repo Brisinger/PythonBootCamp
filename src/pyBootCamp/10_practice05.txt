@@ -124,3 +124,17 @@ SL          	3         	420.00
 
 Harry, your total fare is: INR 2260.00
 
+Ticket booking details of Shubhojit Dasgupta:
+Booking		No. of seats	Price
+2A          	1         	1000.00   
+SL          	3         	420.00    
+
+Shubhojit Dasgupta, your total fare is: INR 2260.00
+
+Ticket booking details of Harry:
+Booking		No. of seats	Price
+2A          	1         	1000.00   
+SL          	3         	420.00    
+
+Harry, your total fare is: INR 2260.00
+
