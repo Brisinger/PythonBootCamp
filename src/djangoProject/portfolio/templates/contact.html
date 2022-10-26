@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block Contactlink %} active {% endblock Contactlink %}
+{% block body %}
+<div class="container my-3">
+    <h3 class="mb-3">Contact Shubhojit</h3>
+    <form method="post" action="/contact" aria-roledescription="Detals to contact Shubhojit">
+        {% csrf_token %}
+        <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Full Name"
+                aria-placeholder="Enter your full name" aria-describedby="nameHelp">
+            <div id="nameHelp" class="form-text">We'll require your full name.</div>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+            <label for="phone" class="form-label">Phone</label>
+            <input type="tel" class="form-control" id="phone" name="phone" placeholder="Mobile number"
+                aria-placeholder="Enter your mobile number" aria-describedby="phoneHelp">
+            <div id="phoneHelp" class="form-text">We'll never share your mobile number with anyone else.</div>
+        </div>
+        <div class="mb-3">
+            <label for="message" class="form-label">How may I help you?</label>
+            <textarea class="form-control" id="message" name="message">
+                </textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+{% endblock body %}
