@@ -7,4 +7,6 @@ print(myStr[1:19:5])
 
 # Reversing the string using negative indices
 print(myStr[-1::-1])
+# Reversing the string using positive index
+print(myStr[len(myStr)::-1])
 
