@@ -4,5 +4,6 @@
 .vscode
 src/__pycache__/*.pyc
 src/pyBootCamp/__pycache__/*.cpython-310.pyc
+src/pyBootCamp/__pycache__/*.pyc
 src/djangoProject/portfolio/env
 .pylintrc
