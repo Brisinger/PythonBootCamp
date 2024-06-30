@@ -14,7 +14,7 @@ for item in my_tuple:
 
 print(my_list)
 
-# Inital values of frequency list will be 1, as an element must exist atleast once.
+# Initial values of frequency list will be 1, as an element must exist atleast once.
 freq_list = [1] * len(my_list)
 
 for i in range(0, len(my_list)):
