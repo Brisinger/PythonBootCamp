@@ -33,15 +33,12 @@ else:
     unit = 1  # One's place initially.
     while number:
         """Gather successive digits in the number from right to left.
-          Modulo operator evaluates to a float type. 
-          Convert the value of the operation to int type before storing it in variabe digit.
-          The variable digit is used in integer division with is not compatible with float types.
         """
-        digit = int(number % 10) * unit
+        digit = (number % 10) * unit
         if digit == 0:
             # Unit placeholder one's, ten's, hundered's and thousand's place in an integer.
             unit *= 10
-            number /= 10
+            number //= 10
             continue
         elif digit > 0 and digit < 4:
             result = roman[1] * digit + result
@@ -60,7 +57,7 @@ else:
         elif digit == 90:
             result = roman[digit] + result
         elif digit >= 100 and digit < 400:
-            result = roman[100] * (digit // unit) * result
+            result = roman[100] * (digit // unit) + result
         elif digit == 400:
             result = roman[digit] + result
         elif digit >= 500 and digit < 900:
@@ -72,5 +69,5 @@ else:
         # Multiply the placeholder by 10 to represent the next digit in the number.
         unit *= 10
         # remove the digits from the number from right to left.
-        number /= 10
+        number //= 10
     print(result)
